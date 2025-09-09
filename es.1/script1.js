@@ -33,5 +33,9 @@ for (let i = 1; i < biciclette.length; i++) {
 
 console.log(biciPiuLeggera);
 
-titolo.append(biciclette["nome"]);
-piuLeggera.append(biciPiuLeggera.nome)
+/* Creazione ciclo per stampare in Pagina gli Oggetti */
+for (i = 0; i<biciclette.length; i++) {
+    titolo.innerHTML += `<li>${biciclette[i].nome} dal peso di ${biciclette[i].peso}kg</li>`
+}
+
+piuLeggera.append(biciPiuLeggera.nome.toUpperCase())

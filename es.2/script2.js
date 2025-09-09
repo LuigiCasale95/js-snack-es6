@@ -20,8 +20,8 @@ const squadre = [
 console.log(squadre)
 
 for (i = 0; i < squadre.length; i++) {
-    squadre[i].punti = randomNumber(1,10,1)
-    squadre[i].falliSub = randomNumber(1,10,1)
+    squadre[i].punti = randomNumber(1,100,1)
+    squadre[i].falliSub = randomNumber(1,100,1)
 }
 
 /* Array Vuoto */
@@ -29,12 +29,12 @@ const falliSubSquadre = []
 
 for (i = 0; i < squadre.length; i++) {
     falliSubSquadre.push(squadre[i].nome, squadre[i].falliSub)
+/*     for(let key in squadre[i]) {
+        falliSubSquadre.push(key)
+    } */
 }
 
 console.log(falliSubSquadre)
-
-
-
 
 
 
