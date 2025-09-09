@@ -30,9 +30,6 @@ const falliSubSquadre = []
 
 for (i = 0; i < squadre.length; i++) {
     falliSubSquadre.push(squadre[i].nome, squadre[i].falliSub)
-/*     for(let key in squadre[i]) {
-        falliSubSquadre.push(key)
-    } */
 }
 
 console.log(falliSubSquadre)
