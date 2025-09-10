@@ -6,6 +6,7 @@ Stampare a schermo la bici con peso minore. */
 /* Selezione variabili collegamento css*/
 const titolo = document.querySelector(".biciclette")
 const piuLeggera = document.querySelector(".piuLeggera")
+const button = document.querySelector(".bottone")
 
 /* Creaziione array di oggetti */
 const biciclette = [
@@ -39,3 +40,11 @@ for (i = 0; i<biciclette.length; i++) {
 }
 
 piuLeggera.append(biciPiuLeggera.nome.toUpperCase())
+
+
+
+button.addEventListener("click", 
+  function(){
+/*     evento.preventDefault()
+ */  piuLeggera.classList.remove("d-none")
+})
